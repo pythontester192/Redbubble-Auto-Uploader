@@ -51,13 +51,13 @@ def auto_upload():
             time.sleep(10)
             title = driver.find_element(By.XPATH, '/html/body/div[1]/div[5]/div[2]/form/div/div[3]/div/div/div[1]/div/div[1]/input')
             title.send_keys(row[1])
-            time.sleep(5)
+            time.sleep(2)
             description = driver.find_element(By.XPATH, '/html/body/div[1]/div[5]/div[2]/form/div/div[3]/div/div/div[1]/div/div[3]/textarea')
             description.send_keys(row[2])
-            time.sleep(5)
+            time.sleep(2)
             tags = driver.find_element(By.XPATH, '/html/body/div[1]/div[5]/div[2]/form/div/div[3]/div/div/div[1]/div/div[2]/textarea')
             tags.send_keys(data)
-            time.sleep(5)
+            time.sleep(2)
             clicks = driver.find_elements(By.XPATH, '//div[@class="rb-button disable-all green"]')
             for click in clicks:
                 try:
